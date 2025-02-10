@@ -4,9 +4,8 @@ import "fmt"
 
 type Users struct {
 	Name string
-	DOB  int
 }
 
-func (u *Users) String() {
-	fmt.Println("Hello user, I am version 1")
+func (u *Users) String() string {
+	return fmt.Sprintf("Hello %s, I am version 2.", u.Name)
 }
